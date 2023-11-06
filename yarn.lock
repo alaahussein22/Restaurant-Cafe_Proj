@@ -44,7 +44,7 @@
   "resolved" "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.23.2.tgz"
   "version" "7.23.2"
 
-"@babel/core@^7.12.16":
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.0.0-0 || ^8.0.0-0 <8.0.0", "@babel/core@^7.11.0", "@babel/core@^7.12.0", "@babel/core@^7.12.16", "@babel/core@^7.13.0", "@babel/core@^7.4.0 || ^8.0.0-0 <8.0.0":
   "integrity" "sha512-n7s51eWdaWZ3vGT2tD4T7J6eJs3QoBXydv7vkUM06Bf1cbVD2Kc2UrkzhiQwobfV7NwOnQXYL7UBJ5VPU+RGoQ=="
   "resolved" "https://registry.npmjs.org/@babel/core/-/core-7.23.2.tgz"
   "version" "7.23.2"
@@ -1529,7 +1529,7 @@
   "resolved" "https://registry.npmjs.org/@vue/cli-plugin-vuex/-/cli-plugin-vuex-5.0.8.tgz"
   "version" "5.0.8"
 
-"@vue/cli-service@~5.0.0":
+"@vue/cli-service@^3.0.0 || ^4.0.0 || ^5.0.0-0", "@vue/cli-service@~5.0.0":
   "integrity" "sha512-nV7tYQLe7YsTtzFrfOMIHc5N2hp5lHG2rpYr0aNja9rNljdgcPZLyQRb2YRivTHqTv7lI962UXFURcpStHgyFw=="
   "resolved" "https://registry.npmjs.org/@vue/cli-service/-/cli-service-5.0.8.tgz"
   "version" "5.0.8"
@@ -1894,15 +1894,15 @@
   "resolved" "https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.3.0.tgz"
   "version" "8.3.0"
 
+"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", "acorn@^8", "acorn@^8.0.4", "acorn@^8.0.5", "acorn@^8.7.1", "acorn@^8.8.2", "acorn@^8.9.0":
+  "integrity" "sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w=="
+  "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.11.2.tgz"
+  "version" "8.11.2"
+
 "acorn@^7.4.0":
   "integrity" "sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A=="
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-7.4.1.tgz"
   "version" "7.4.1"
-
-"acorn@^8.0.4", "acorn@^8.0.5", "acorn@^8.7.1", "acorn@^8.8.2", "acorn@^8.9.0":
-  "integrity" "sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w=="
-  "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.11.2.tgz"
-  "version" "8.11.2"
 
 "address@^1.1.2":
   "integrity" "sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA=="
@@ -1928,7 +1928,7 @@
   dependencies:
     "fast-deep-equal" "^3.1.3"
 
-"ajv@^6.10.0", "ajv@^6.12.4", "ajv@^6.12.5":
+"ajv@^6.10.0", "ajv@^6.12.4", "ajv@^6.12.5", "ajv@^6.9.1":
   "integrity" "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g=="
   "resolved" "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz"
   "version" "6.12.6"
@@ -1938,7 +1938,7 @@
     "json-schema-traverse" "^0.4.1"
     "uri-js" "^4.2.2"
 
-"ajv@^8.0.0", "ajv@^8.9.0":
+"ajv@^8.0.0", "ajv@^8.8.2", "ajv@^8.9.0":
   "integrity" "sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA=="
   "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.12.0.tgz"
   "version" "8.12.0"
@@ -2194,7 +2194,7 @@
   dependencies:
     "fill-range" "^7.0.1"
 
-"browserslist@^4.0.0", "browserslist@^4.14.5", "browserslist@^4.16.3", "browserslist@^4.21.10", "browserslist@^4.21.4", "browserslist@^4.21.9", "browserslist@^4.22.1":
+"browserslist@^4.0.0", "browserslist@^4.14.5", "browserslist@^4.16.3", "browserslist@^4.21.10", "browserslist@^4.21.4", "browserslist@^4.21.9", "browserslist@^4.22.1", "browserslist@>= 4.21.0":
   "integrity" "sha512-FEVc202+2iuClEhZhrWy6ZiAcRLvNMyYcxZ8raemul1DYVOVdFsbqckWLdsixQZCpJlwe77Z3UTalE7jsjnKfQ=="
   "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.22.1.tgz"
   "version" "4.22.1"
@@ -2600,7 +2600,7 @@
   "resolved" "https://registry.npmjs.org/css-declaration-sorter/-/css-declaration-sorter-6.4.1.tgz"
   "version" "6.4.1"
 
-"css-loader@^6.5.0":
+"css-loader@*", "css-loader@^6.5.0":
   "integrity" "sha512-xDAXtEVGlD0gJ07iclwWVkLoZOpEvAWaSyf6W18S2pOC//K8+qUDIx8IIT3D+HjnmkJPQeesOPv5aiUaJsCM2g=="
   "resolved" "https://registry.npmjs.org/css-loader/-/css-loader-6.8.1.tgz"
   "version" "6.8.1"
@@ -3060,7 +3060,7 @@
     "normalize-path" "^3.0.0"
     "schema-utils" "^4.0.0"
 
-"eslint@^7.32.0":
+"eslint@^6.2.0 || ^7.0.0 || ^8.0.0", "eslint@^7.0.0 || ^8.0.0", "eslint@^7.32.0", "eslint@^7.5.0 || ^8.0.0", "eslint@>=5", "eslint@>=6.0.0", "eslint@>=7.5.0":
   "integrity" "sha512-VHZ8gX+EDfz+97jGcgyGCyRia/dPOd6Xh9yPv8Bl1+SoaIwD+a/vlrOmGRUyOYu7MwUhc7CxqeaDZU13S4+EpA=="
   "resolved" "https://registry.npmjs.org/eslint/-/eslint-7.32.0.tgz"
   "version" "7.32.0"
@@ -5015,15 +5015,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^7.0.36":
-  "integrity" "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.39.tgz"
-  "version" "7.0.39"
-  dependencies:
-    "picocolors" "^0.2.1"
-    "source-map" "^0.6.1"
-
-"postcss@^8.2.6", "postcss@^8.3.5", "postcss@^8.4.21", "postcss@^8.4.31":
+"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.2.6", "postcss@^8.3.5", "postcss@^8.4.21", "postcss@^8.4.31":
   "integrity" "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz"
   "version" "8.4.31"
@@ -5031,6 +5023,14 @@
     "nanoid" "^3.3.6"
     "picocolors" "^1.0.0"
     "source-map-js" "^1.0.2"
+
+"postcss@^7.0.36":
+  "integrity" "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.39.tgz"
+  "version" "7.0.39"
+  dependencies:
+    "picocolors" "^0.2.1"
+    "source-map" "^0.6.1"
 
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
@@ -5338,7 +5338,7 @@
     "klona" "^2.0.4"
     "neo-async" "^2.6.2"
 
-"sass@^1.32.7":
+"sass@^1.3.0", "sass@^1.32.7":
   "integrity" "sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ=="
   "resolved" "https://registry.npmjs.org/sass/-/sass-1.69.5.tgz"
   "version" "1.69.5"
@@ -6093,7 +6093,7 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^3.2.13":
+"vue@*", "vue@^2 || ^3.2.13", "vue@^2.6.14 || ^3.3.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.13", "vue@3.3.7":
   "integrity" "sha512-YEMDia1ZTv1TeBbnu6VybatmSteGOS3A3YgfINOfraCbf85wdKHzscD6HSS/vB4GAtI7sa1XPX7HcQaJ1l24zA=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.3.7.tgz"
   "version" "3.3.7"
@@ -6230,7 +6230,7 @@
     "flat" "^5.0.2"
     "wildcard" "^2.0.0"
 
-"webpack-sources@^3.2.3":
+"webpack-sources@*", "webpack-sources@^3.2.3":
   "integrity" "sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w=="
   "resolved" "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz"
   "version" "3.2.3"
@@ -6240,7 +6240,7 @@
   "resolved" "https://registry.npmjs.org/webpack-virtual-modules/-/webpack-virtual-modules-0.4.6.tgz"
   "version" "0.4.6"
 
-"webpack@^5.54.0":
+"webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.1.0 || ^5.0.0-0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.1.0 || ^5.0.0-0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.54.0", "webpack@>=2":
   "integrity" "sha512-qyfIC10pOr70V+jkmud8tMfajraGCZMBWJtrmuBymQKCrLTRejBI8STDp1MCyZu/QTdZSeacCQYpYNQVOzX5kw=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.89.0.tgz"
   "version" "5.89.0"

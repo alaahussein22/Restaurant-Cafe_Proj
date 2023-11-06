@@ -10,6 +10,8 @@
               v-model="firstName"
               label="Name"
               :rules="firstNameRules"
+              color="#e9edc9"
+                    variant="underlined"
             ></v-text-field>
 
             <v-text-field
@@ -17,6 +19,8 @@
               label="Password"
               type="password"
               :rules="lastNameRules"
+              color="#e9edc9"
+                    variant="underlined"
             ></v-text-field>
 
             <v-btn type="submit" class="mt-2">Submit</v-btn>
