@@ -73,6 +73,7 @@
  
   .v-card{
       box-shadow: none;
+      background-color: #FFFBF3;
   }
 
   .v-card .filter{

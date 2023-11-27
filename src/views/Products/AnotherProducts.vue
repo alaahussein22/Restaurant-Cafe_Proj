@@ -5,9 +5,7 @@ import Filter from "../../components/Products/Filter.vue"
 
 <template>
 
-  <div class="products">
-    <h1>Our Products</h1>
- 
+  <div class="products"> 
     <v-container>
 <Filter />
 
@@ -21,13 +19,13 @@ import Filter from "../../components/Products/Filter.vue"
               height="400px"
               cover
             ></v-img>
-            <div class="d-flex pt-1 pb-2" style="background-color: #E9EDC9;border-color: #E9EDC9;">
+            <div class="d-flex pt-1 pb-2" style="background-color: #FFD3B6;border-color: #FFD3B6;">
               <div>
                 <v-card-subtitle> <span>Categorie: </span> Cake</v-card-subtitle>
                 <v-card-subtitle> <span>Type:</span> Cake</v-card-subtitle>
                 <v-card-subtitle> <span>Calories:</span> 11</v-card-subtitle>
               </div>
-              <v-icon>mdi-heart</v-icon>
+              <v-icon>mdi-pen</v-icon>
             </div>
           </v-card>
         </v-col>
@@ -40,13 +38,13 @@ import Filter from "../../components/Products/Filter.vue"
               height="400px"
               cover
             ></v-img>
-            <div class="d-flex pt-1 pb-2" style="background-color: #E9EDC9;border-color: #E9EDC9;">
+            <div class="d-flex pt-1 pb-2" style="background-color: #FFD3B6;border-color: #FFD3B6;">
               <div>
                 <v-card-subtitle> <span>Categorie: </span> Cake</v-card-subtitle>
                 <v-card-subtitle> <span>Type:</span> Cake</v-card-subtitle>
                 <v-card-subtitle> <span>Calories:</span> 11</v-card-subtitle>
               </div>
-              <v-icon>mdi-heart</v-icon>
+              <v-icon>mdi-pen</v-icon>
             </div>
           </v-card>
         </v-col>
@@ -59,13 +57,13 @@ import Filter from "../../components/Products/Filter.vue"
               height="400px"
               cover
             ></v-img>
-            <div class="d-flex pt-1 pb-2" style="background-color: #E9EDC9;border-color: #E9EDC9;">
+            <div class="d-flex pt-1 pb-2" style="background-color: #FFD3B6;border-color: #FFD3B6;">
               <div>
                 <v-card-subtitle> <span>Categorie: </span> Cake</v-card-subtitle>
                 <v-card-subtitle> <span>Type:</span> Cake</v-card-subtitle>
                 <v-card-subtitle> <span>Calories:</span> 11</v-card-subtitle>
               </div>
-              <v-icon>mdi-heart</v-icon>
+              <v-icon>mdi-pen</v-icon>
             </div>
           </v-card>
         </v-col>
@@ -88,11 +86,11 @@ import Filter from "../../components/Products/Filter.vue"
 }
 
 .v-card .v-card-title {
-  background-color: #b1bb8f;
+  background-color: #EBAE81;
 }
 
 .v-card .v-card-subtitle {
-  color: #5b513c;
+  color: black;
   display: flex;
   margin: 0.5rem 0 0 0;
   font-size: 1rem;
@@ -104,6 +102,6 @@ import Filter from "../../components/Products/Filter.vue"
 
 .v-icon {
   margin: 3rem 0rem 0rem 6rem;
-  color: #b1bb8f;
+  color: #E69F5D;
 }
 </style>
