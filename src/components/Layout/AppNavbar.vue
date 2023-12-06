@@ -4,57 +4,83 @@
       color="#F4EAD8"
       style="box-shadow: none; height: 72px; padding: 0.5rem 0"
     >
-      <v-container fluid>
-        <v-row>
-          <v-col cols="2">
+      <v-container>
+        <div class="content">
+          <div>
             <router-link to="/">
-              <img src="../../assets/images/chef.jpg" contain alt="" />
-              <br />
-              <span>Restaurant</span>
+              <img src="../../assets/images/download (1).png" contain alt="" />
             </router-link>
-          </v-col>
+          </div>
 
-          <v-col cols="7">
+          <div class="heart">
+            <router-link to="/Products">
+              <h4>
+                <v-icon class="me-2 mb-1" aria-hidden="false">mdi-heart</v-icon
+                >Dein Kochbuch
+              </h4>
+            </router-link>
+          </div>
+
+          <div>
             <div class="add">
               <router-link to="/addProduct">
-                <h3><v-icon>mdi-plus</v-icon>Add Product</h3>
+                <h3>
+                  <v-icon class="me-2" aria-hidden="false">mdi-plus</v-icon
+                  >Rezept erstellen
+                </h3>
               </router-link>
             </div>
-          </v-col>
+          </div>
 
-          <v-col cols="3">
+          <div>
             <div class="d-flex justify-content-between login">
-              <div class="heart d-flex">
-                <h4><v-icon>mdi-heart</v-icon> Abeer Mahmoud</h4>
-              </div>
-              <router-link to="/login">
+              <router-link to="/register">
                 <v-btn
                   style="
                     height: 25;
-                    margin: -6px 50px;
+                    margin: -6px 0px;
                     color: #6c744f;
-                    font-size: 18px;
+                    font-size: 13px;
+                    text-transform: capitalize;
                   "
                 >
-                  Login
+                  Registrieren
+                </v-btn>
+              </router-link>
+              <router-link to="/login">
+                <v-btn
+                  style="
+                    margin: -6px 70px;
+                    color: #6c744f;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                  "
+                >
+                  Anmelden
                 </v-btn>
               </router-link>
             </div>
-          </v-col>
-        </v-row>
+          </div>
+        </div>
       </v-container>
     </v-app-bar>
   </div>
 </template>
 
 <style scoped>
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7rem;
+}
 .nav a {
   text-decoration: none;
   color: #5b513c;
 }
+
 img {
-  width: 50px;
-  border-radius: 50%;
+  width: 65px;
   height: auto;
 }
 .add h3 {
@@ -62,7 +88,7 @@ img {
   font-size: 21px;
   font-weight: bold;
   cursor: pointer;
-  margin: 0.5rem 0;
+  margin-right: 10rem;
 }
 .add a {
   text-decoration: none;
@@ -71,13 +97,14 @@ img {
   background-color: #f4ead8;
 }
 
-.login {
-  margin: 0.8rem 0;
-  cursor: pointer;
+.heart h4,
+.log {
+  font-size: 13px;
+  color: #6c744f;
+  margin-right: 10rem;
 }
 
-.login .heart h4 {
-  color: #5b513c;
-  font-weight: 400;
+.login {
+  cursor: pointer;
 }
 </style>

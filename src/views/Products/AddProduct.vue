@@ -1,19 +1,19 @@
 <template>
   <div class="add">
     <v-container>
-      <v-row>
+      <v-row style="margin: 0 7rem">
         <v-col cols="12">
           <h3 class="header">
-            Hi, Abeer!
+            <span>Hi,</span>Abeer!
             <br />
-            You Can Add Product Here
+            Hier kannst du ein Rezept erstellen
           </h3>
 
           <div class="product d-flex">
             <div>
-              <img src="@/assets/images/chef.jpg" alt="" />
+              <img src="@/assets/images/cup.png" alt="" />
               <br />
-              <v-btn type="submit" class="mt-2 upload">Upload</v-btn>
+              <v-btn type="submit" class="mt-2 upload">Bild auswählen</v-btn>
             </div>
 
             <div class="addition">
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="d-flex layout">
-                  <h4>ProductType:</h4>
+                  <h4>Geschmacksrichtung:</h4>
                   <v-select
                     color="primary"
                     variant="underlined"
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="d-flex layout">
-                  <h4>Specialist:</h4>
+                  <h4>Speiseart:</h4>
                   <v-select
                     color="primary"
                     variant="underlined"
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="d-flex layout">
-                  <h4>Quantity:</h4>
+                  <h4>Dauer:</h4>
                   <v-text-field
                     v-model="firstName"
                     :rules="firstNameRules"
@@ -71,12 +71,13 @@
                 </div>
 
                 <div class="d-flex layout">
-                  <h4>Comment:</h4>
-                  <v-textarea color="#E9EDC9"></v-textarea>
+                  <h4>Zubereitung:</h4>
+                  <v-textarea></v-textarea>
                 </div>
+
                 <div class="d-flex clear">
-                  <v-btn type="submit" class="mt-2">Add</v-btn>
-                  <v-btn type="submit" class="mt-2">Clear</v-btn>
+                  <v-btn type="submit" class="mt-2">Rezept posten</v-btn>
+                  <v-btn type="submit" class="mt-2">Verwerfen</v-btn>
                 </div>
               </v-form>
             </div>
@@ -125,6 +126,10 @@ export default {
   margin: auto;
 }
 
+.add .header span {
+  color: #5b513c;
+  font-weight: bold;
+}
 .add .product {
   margin: 4rem 0 5rem 0;
 }
@@ -132,6 +137,7 @@ export default {
   width: 20rem;
   height: 25rem;
   border-radius: 16px;
+  margin: 1.5rem 0;
 }
 
 .add .product .upload {
@@ -145,11 +151,11 @@ export default {
 }
 
 .add .product .addition {
-  margin-left: 6rem;
+  margin-left: 5rem;
 }
 
 .add .product .addition .layout {
-  width: 35rem;
+  width: 50rem;
   align-items: center;
 }
 
@@ -167,7 +173,10 @@ export default {
   justify-content: space-between;
 }
 
-.add .product .addition .clear .v-btn{
+.v-textarea textarea {
+  background-color: #e9edc9;
+}
+.add .product .addition .clear .v-btn {
   box-shadow: none;
   width: 10rem;
   background-color: #e9edc9;

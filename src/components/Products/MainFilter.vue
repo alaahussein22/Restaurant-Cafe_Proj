@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="4">
           <v-card class="mx-auto" max-width="300">
-            <h1 class="filter">Gespeicherte Rezepte </h1>
+            <h1 class="filter">Gespostete Rezepte</h1>
           </v-card>
         </v-col>
 
@@ -15,7 +15,9 @@
               <div class="d-flex justify-content-between">
                 <h3>Speiseart :</h3>
                 <v-btn class=""> Gebackenes </v-btn>
-                <v-btn class="" style="background-color:#B1BB8F"> Dessert </v-btn>
+                <v-btn class="" style="background-color: #ebae81">
+                  Dessert
+                </v-btn>
                 <v-btn class=""> Getränk </v-btn>
                 <v-btn class=""> Hauptspeise </v-btn>
                 <v-btn class=""> Snacks </v-btn>
@@ -69,7 +71,7 @@ export default {
 }
 
 .v-card .filter {
-  color: #A4AF7F;
+  color: #e69f5d;
   font-weight: bold;
   /* padding: 2.2rem; */
   margin: 2rem 0;
@@ -82,11 +84,11 @@ export default {
 }
 
 .v-card .v-card-title {
-  background-color: #b1bb8f;
+  background-color: #ffd3b6;
 }
 
 .v-card .category .v-btn {
-  background-color: #e9edc9;
+  background-color: #FFD3B6;
   margin: 0 5px;
   box-shadow: none;
   text-transform: capitalize;
@@ -104,7 +106,7 @@ export default {
 
 .v-icon {
   margin: 0rem 1rem 0rem 4rem;
-  color: #b1bb8f;
+  color: #e69f5d;
   font-size: 3rem;
 }
 </style>

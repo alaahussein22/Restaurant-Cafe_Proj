@@ -4,38 +4,38 @@
       <v-row>
         <v-col cols="3"> </v-col>
         <v-col cols="6">
-          <h3>Register</h3>
+          <h3>Registrieren</h3>
           <v-form fast-fail @submit.prevent>
             <v-text-field
               v-model="firstName"
               label="Name"
               :rules="firstNameRules"
               color="#e9edc9"
-                    variant="underlined"
+              variant="underlined"
             ></v-text-field>
 
             <v-text-field
               v-model="lastName"
-              label="Password"
+              label="Passwort"
               type="password"
               :rules="lastNameRules"
               color="#e9edc9"
-                    variant="underlined"
+              variant="underlined"
             ></v-text-field>
 
             <v-text-field
               v-model="lastName"
-              label="Confirm Password"
+              label="Passwort wiederholen"
               type="password"
               :rules="lastNameRules"
               color="#e9edc9"
-                    variant="underlined"
+              variant="underlined"
             ></v-text-field>
-            <v-btn type="submit" class="mt-2">Submit</v-btn>
+            <v-btn type="submit" class="mt-2">Registrieren</v-btn>
             <div class="make_account flex-start">
-              <h5 class="account">Do You Have Account?</h5>
+              <h5 class="account">Du hast schon ein Konto?</h5>
               <router-link to="/login">
-                <h5 class="register">Login</h5>
+                <h5 class="register">Anmelden</h5>
               </router-link>
             </div>
           </v-form>
@@ -73,6 +73,8 @@ export default {
 .login {
   background-color: #fffbf3;
   padding: 7rem 0 0 0;
+  height:45rem
+
 }
 
 .login h3 {
@@ -91,7 +93,7 @@ export default {
   background-color: #e9edc9;
   padding: 1.2rem 0 2.2rem 0;
   box-shadow: none;
-  width: 88%;
+  width: 92%;
   font-weight: bold;
   color: #5b513c;
 }
