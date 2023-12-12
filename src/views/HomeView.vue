@@ -5,31 +5,52 @@ import AppAbout from "./AboutView.vue";
 <template>
   <div class="home">
     <v-container>
-      <v-row>
-        <v-col cols="6" class="header">
-          <h1>RWilkommen bei <span class="mt-5">KochKladde!</span></h1>
-          <p>
-            EinLorem ipsum dolor sit amet, consetetur sadipscing<br />
-            elitr, sed diam nonumy eirmod tempor invidunt ut <br />
-            labore et dolore magna aliquyam erat, sed diam<br />
-            voluptua.
-          </p>
-          <img src="@/assets/images/salad.jpg" alt="" />
-        </v-col>
+      <div class="content">
+        <div class="d-flex header">
+          <span>
+            <h1>
+              Wilkommen bei <br />
+              <span style="margin-right: 3.5rem">KochKladde!</span>
+            </h1>
+            <p>
+              EinLorem ipsum dolor sit amet, consetetur sadipscing<br />
+              elitr, sed diam nonumy eirmod tempor invidunt ut <br />
+              labore et dolore magna aliquyam erat, sed diam<br />
+              voluptua.
+            </p>
+          </span>
+          <img
+            src="@/assets/images/salad.jpg"
+            alt=""
+            style="margin-right: 6rem"
+          />
+        </div>
 
-        <v-col cols="6" class="header_bottom">
-          <img src="@/assets/images/cookies-1835414_1280.jpg" alt="" />
-          <h1>Rezepte <span class="ers">erstellen</span> <br />und<span class="spe"> speichern</span></h1>
-          <p>
-            EinLorem ipsum dolor sit amet, consetetur sadipscing<br />
-            elitr, sed diam nonumy eirmod tempor invidunt ut <br />
-            labore et dolore magna aliquyam erat, sed diam<br />
-            voluptua.
-          </p>
-        </v-col>
-      </v-row>
+        <div class="d-flex header_bottom">
+          <img
+            src="@/assets/images/cookies-1835414_1280.jpg"
+            alt=""
+            style="margin-left: 7rem"
+          />
+          <span >
+            <h1>
+              Rezepte <span class="ers">erstellen</span> <br />und<span
+                class="spe"
+              >
+                speichern</span
+              >
+            </h1>
+            <p>
+              EinLorem ipsum dolor sit amet, consetetur sadipscing<br />
+              elitr, sed diam nonumy eirmod tempor invidunt ut <br />
+              labore et dolore magna aliquyam erat, sed diam<br />
+              voluptua.
+            </p>
+          </span>
+        </div>
+      </div>
     </v-container>
-    <AppAbout />
+  <AppAbout />
   </div>
 </template>
 
@@ -37,29 +58,34 @@ import AppAbout from "./AboutView.vue";
 .home {
   background-color: #fffbf3;
 }
-.home .header {
-  margin-top: 3.5rem;
+
+.home .content {
+  margin: 3rem 0;
 }
-.home .header h1 {
+.home .content .header,
+.home .content .header_bottom {
+  justify-content: space-between;
+  margin: 0rem;
+}
+.home .content .header h1 {
   color: #6c744f;
-  letter-spacing: 0.5rem;
-  margin-right: 4rem;
+  letter-spacing: 0.3rem;
   margin-bottom: 1rem;
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 50px;
 }
-.home .header h1 span {
-  margin-left: -8rem;
-}
-.home .header p {
+
+.home .content .header p {
   color: #5b513c;
   letter-spacing: 0.1rem;
   line-height: 2rem;
-  font-size: 20px;
+  font-size: 17px;
   text-align: justify;
   margin-left: 10rem;
 }
-.home .header_bottom h1 {
+
+
+.home .content .header_bottom h1 {
   color: #6c744f;
   letter-spacing: 0.3rem;
   margin-bottom: 1rem;
@@ -68,30 +94,27 @@ import AppAbout from "./AboutView.vue";
   font-size: 50px;
   text-align: justify;
   margin-left: 10rem;
-
 }
-.header_bottom p {
+.home .content .header_bottom p {
   color: #5b513c;
   letter-spacing: 0.1rem;
   line-height: 2rem;
   font-size: 20px;
   text-align: justify;
-  margin-left: 0rem;
 }
 
-.header_bottom .ers{
-  color:#E69F5D
+.home .content .header_bottom .ers {
+  color: #e69f5d;
 }
 
-.header_bottom .spe{
-  color:#B1BB8F
+.home .content .header_bottom .spe {
+  color: #b1bb8f;
 }
-.home img {
-  margin-top: 3.5rem;
+.home .content img {
   border: 10px solid #d9a279;
   border-radius: 5rem;
-  width: 55%;
-  height: 65%;
+  width: 21rem;
+  height: 21rem;
   background-position: center;
   background-size: contain;
 }

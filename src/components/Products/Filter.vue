@@ -3,19 +3,21 @@
     <v-container>
       <v-row>
         <v-col cols="4">
-          <v-card class="mx-auto" max-width="300">
-            <h1 class="filter">Gespeicherte Rezepte </h1>
+          <v-card class="mx-auto" max-width="200">
+            <h1 class="filter">Gespeicherte Rezepte</h1>
           </v-card>
         </v-col>
 
         <v-col cols="8">
-          <v-card class="d-flex" style="margin: 3rem -60px">
+          <v-card class="d-flex" style="margin: 3rem -80px">
             <v-icon>mdi-filter</v-icon>
             <div class="category">
               <div class="d-flex justify-content-between">
                 <h3>Speiseart :</h3>
                 <v-btn class=""> Gebackenes </v-btn>
-                <v-btn class="" style="background-color:#B1BB8F"> Dessert </v-btn>
+                <v-btn class="" style="background-color: #b1bb8f">
+                  Dessert
+                </v-btn>
                 <v-btn class=""> Getränk </v-btn>
                 <v-btn class=""> Hauptspeise </v-btn>
                 <v-btn class=""> Snacks </v-btn>
@@ -65,20 +67,18 @@ export default {
 <style scoped>
 .v-card {
   box-shadow: none;
-  background-color: #fffbf3;
+  /* background-color: #fffbf3; */
 }
 
 .v-card .filter {
-  color: #A4AF7F;
+  color: #a4af7f;
   font-weight: bold;
-  /* padding: 2.2rem; */
   margin: 2rem 0;
   box-shadow: none;
   align-items: center;
   justify-content: center;
   display: flex;
   text-align: justify;
-  /* width: 300px; */
 }
 
 .v-card .v-card-title {
@@ -87,7 +87,7 @@ export default {
 
 .v-card .category .v-btn {
   background-color: #e9edc9;
-  margin: 0 5px;
+  margin: 0 3px;
   box-shadow: none;
   text-transform: capitalize;
 }

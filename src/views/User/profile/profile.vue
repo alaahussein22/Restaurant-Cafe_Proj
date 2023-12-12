@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="d-flex layout">
-                  <h4>E-Mail:</h4>
+                  <h4>EMail:</h4>
                   <h5>Nutzer@mail.de</h5>
                   <v-btn type="submit" class="mt-2 post"
                     >E-Mail bearbeiten</v-btn
@@ -97,15 +97,15 @@ export default {
 }
 
 .add .product {
-  margin: 4rem 0 5rem 0;
+  margin: 4rem 0 0 0;
 }
 
 .add .product .photo {
-  margin: 0 4rem;
+  margin: 0rem;
 }
 .add .product img {
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   margin: 1.5rem 0;
 }
@@ -126,7 +126,7 @@ export default {
 }
 
 .add .product .addition .layout {
-  width: 43rem;
+  width: 35rem;
   align-items: center;
   margin: 1rem 0;
 }
@@ -165,6 +165,6 @@ export default {
   background-color: #e9edc9;
   color: #5b513c;
   font-weight: bold;
-  margin: 0 0rem 0 33rem;
+  margin: 0 0rem 0 25rem;
 }
 </style>

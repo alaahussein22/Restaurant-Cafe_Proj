@@ -155,7 +155,7 @@ export default {
 }
 
 .add .product .addition .layout {
-  width: 50rem;
+  width: 33rem;
   align-items: center;
 }
 

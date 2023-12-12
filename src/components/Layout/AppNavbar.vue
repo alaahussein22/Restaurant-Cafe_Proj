@@ -14,10 +14,10 @@
 
           <div class="heart">
             <router-link to="/Products">
-              <h4>
-                <v-icon class="me-2 mb-1" aria-hidden="false">mdi-heart</v-icon
+              <h5>
+                <v-icon class="me-1 mb-1" aria-hidden="false">mdi-heart</v-icon
                 >Dein Kochbuch
-              </h4>
+              </h5>
             </router-link>
           </div>
 
@@ -25,7 +25,7 @@
             <div class="add">
               <router-link to="/addProduct">
                 <h3>
-                  <v-icon class="me-2" aria-hidden="false">mdi-plus</v-icon
+                  <v-icon class="me-1" aria-hidden="false">mdi-plus</v-icon
                   >Rezept erstellen
                 </h3>
               </router-link>
@@ -50,7 +50,7 @@
               <router-link to="/login">
                 <v-btn
                   style="
-                    margin: -6px 70px;
+                    margin: -6px 0px;
                     color: #6c744f;
                     font-size: 13px;
                     text-transform: capitalize;
@@ -81,14 +81,14 @@
 
 img {
   width: 65px;
-  height: auto;
+  height: 65px;
 }
 .add h3 {
   color: #6c744f;
   font-size: 21px;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 10rem;
+  /* margin-right: 10rem; */
 }
 .add a {
   text-decoration: none;
@@ -97,11 +97,11 @@ img {
   background-color: #f4ead8;
 }
 
-.heart h4,
+.heart h5,
 .log {
   font-size: 13px;
   color: #6c744f;
-  margin-right: 10rem;
+  /* margin-right: 10rem; */
 }
 
 .login {

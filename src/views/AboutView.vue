@@ -2,7 +2,7 @@
   <div class="about">
     <v-container>
       <v-row>
-        <v-col cols="6">
+        <v-col cols="7">
           <h1>Über uns</h1>
           <p>
             EinLorem ipsum dolor sit amet, consetetur sadipscing<br />
@@ -21,18 +21,18 @@
   color: #6c744f;
   letter-spacing: 0.3rem;
   margin-bottom: 1rem;
-  margin-top: 10rem;
+  margin-top: 2rem;
   font-weight: bolder;
-  margin-right: 25rem;
   font-size: 50px;
+  margin-right: 12rem;
 }
 
 .about p {
   color: #5b513c;
   letter-spacing: 0.1rem;
   line-height: 2rem;
-  font-size: 20px;
+  font-size: 17px;
   text-align: justify;
-  margin-left: 10rem;
+  margin-left: 11rem;
 }
 </style>
